@@ -135,6 +135,21 @@ html, body, .container {
     font-size:14px;
 }
 
+.modal {
+    top:0 !important;
+    left:0 !important;
+    width:100% !important;
+    margin:0 !important;
+}
+
+.input-small, .input-xlarge {
+    width: 180px !important;
+}
+
+#uri-input {
+    width:200px !important;
+}
+
 #main-control #not-selected-grp .icon-play {background:url(../img/icon-start-alt.png)}
 #main-control #not-selected-grp .icon-remove {background:url(../img/icon-delete-alt.png)}
 #main-control #not-selected-grp .icon-pause {background:url(../img/icon-pause-alt.png)}
