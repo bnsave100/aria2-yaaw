@@ -567,7 +567,7 @@ if (typeof ARIA2=="undefined"||!ARIA2) var ARIA2=(function(){
         function(result) {
           //console.debug(result);
 
-          main_alert("alert-info", "option updated", 1000);
+          main_alert("alert-info", "参数已更新", 1000);
         }
       );
     },
