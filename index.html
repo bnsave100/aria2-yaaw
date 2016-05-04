@@ -22,16 +22,22 @@
         <meta charset=utf-8 />
         <title>极光远程下载</title>
         <meta name="author" content="Binux" />
-        <link rel="icon" href="favicon.ico" />
         <link href="css/main.css" rel="stylesheet" />
         <link href="css/fcstyle.css" rel="stylesheet" />
         <link href="css/bootstrap.min.css" rel="stylesheet" />
-        <!--[if lt IE 9]>
-          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <!--[if IE]>
+          <script src="js/html5.js"></script>
+          <script type="text/javascript">alert('您正在使用 IE 浏览器，部分功能将无法使用！');</script>
         <![endif]-->
         <script>
             if(navigator.userAgent.match(/android|mobile|phone|BlackBerry|ipod|iphone|nokia/i)){
                 window.location.href = "mobile.html";
+            }
+            if(navigator.userAgent.match(/msie|Trident/i)){
+                alert('您正在使用 IE 浏览器，部分功能将无法使用！');
+                var script = document.createElement('script');
+                script.src = 'js/html5.js';
+                main_alert("alert-error", "您正在使用 IE 浏览器，部分功能将无法使用！");
             }
         </script>
     </head>
@@ -39,11 +45,6 @@
         <div class="container">
             <header class="main-head page-header">
                 <img src="img/yc-xunlei-logo.png" />
-                <span id="offline-cached"></span>
-                <div id="global-info" class="pull-right">
-                    
-                    
-                </div>
             </header>
             <div class="left-frame">
                 <div class="left-top-padding"></div>
