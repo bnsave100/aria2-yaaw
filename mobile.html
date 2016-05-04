@@ -169,7 +169,7 @@
                             <label class="control-label" for="rpc-path">JSON-RPC 链接</label>
                             <div class="controls">
                                 <div class="input-append btn-group rpc-path-wrap">
-                                    <input type="text" class="input-xlarge pull-left" id="rpc-path"><a class="add-on btn dropdown-toggle" href="#" disabled><b class="caret"></b></a>
+                                    <input type="text" class="input-xlarge pull-left" id="rpc-path"><!--<a class="add-on btn dropdown-toggle" href="#" disabled><b class="caret"></b></a>-->
                                 </div>
                             </div>
                         </div>
@@ -199,9 +199,9 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <div id="copyright">© Copyright <a href="http://www.fcsys.org">FC-System Computer Inc</a>. (Yaaw by <a href="https://github.com/binux/yaaw">Binux</a>)</div>
                 <a href="###" onclick="$('#setting-form').submit();" class="btn btn-success">保存</a>
                 <a href="#" class="btn" data-dismiss="modal">取消</a>
+                <div id="copyright">主题: <a href="http://www.fcsys.org">FC-SYSTEM</a>. (程序: <a href="https://github.com/binux/yaaw">Binux</a>)</div>
             </div>
         </section>
         <script id="global-speed-tpl" type="text/mustache-template">
@@ -348,7 +348,7 @@
             </label>
             </div>
             </div>
-            <div class="control-group half">
+            <!--<div class="control-group half">
             <div class="controls">
             <label class="checkbox">
             <input type="checkbox" name="parameterized-uri" class="input-save" {{#parameterized-uri}}checked{{/parameterized-uri}} />
@@ -356,20 +356,20 @@
             </label>
             </div>
             </div>
-            <div class="clearfix"></div>
+            <div class="clearfix"></div>-->
             <div class="control-group half">
-            <label class="control-label" for="ati-split">Split</label>
+            <label class="control-label" for="ati-split">分割数</label>
             <div class="controls">
             <input id="ati-split" class="input-small input-save" name="split" value="{{split}}" />
             </div>
             </div>
             <div class="control-group half">
-            <label class="control-label" for="ati-cps">Conn/Serv</label>
+            <label class="control-label" for="ati-cps">连接数</label>
             <div class="controls">
             <input id="ati-cps" class="input-small input-save" name="max-connection-per-server" value="{{max-connection-per-server}}" />
             </div>
             </div>
-            <div class="control-group half">
+            <!--<div class="control-group half">
             <label class="control-label" for="ati-sr">Seed Ratio</label>
             <div class="controls">
             <input id="ati-sr" class="input-small input-save" name="seed-ratio" value="{{seed-ratio}}" />
@@ -380,57 +380,57 @@
             <div class="controls">
             <input id="ati-st" class="input-small input-save" name="seed-time" value="{{seed-time}}" />
             </div>
-            </div>
-            <div class="clearfix"></div>
+            </div>-->
+            <!--<div class="clearfix"></div>
             <div class="control-group">
             <label class="control-label" for="ati-header">Header</label>
             <div class="controls">
             <textarea id="ati-header" class="input-xlarge input-save" name="header" warp="off">{{header}}</textarea>
             </div>
-            </div>
+            </div>-->
             </form>
         </script>
         <script id="aria2-global-setting-tpl" type="text/mustache-template">
             <hr />
             <form id="aria2-gs-form" class="form-horizontal" onsubmit="false">
             <div class="control-group half">
-            <label class="control-label" for="gsi-dl">Download Limit</label>
+            <label class="control-label" for="gsi-dl">下载限速</label>
             <div class="controls">
             <input id="gsi-dl" name="max-overall-download-limit" class="input-small" value="{{max-overall-download-limit}}" />
             </div>
             </div>
             <div class="control-group half">
-            <label class="control-label" for="gsi-ul">Upload Limit</label>
+            <label class="control-label" for="gsi-ul">上传限速</label>
             <div class="controls">
             <input id="gsi-ul" name="max-overall-upload-limit" class="input-small" value="{{max-overall-upload-limit}}" />
             </div>
             </div>
-            <div class="control-group half">
+            <!--<div class="control-group half">
             <label class="control-label" for="gsi-cd">Concurrent Downs</label>
             <div class="controls">
             <input id="gsi-cd" name="max-concurrent-downloads" class="input-small" value="{{max-concurrent-downloads}}" />
             </div>
-            </div>
-            <div class="control-group half">
+            </div>-->
+            <!--<div class="control-group half">
             <label class="control-label" for="gsi-mss">Min Split Size</label>
             <div class="controls">
             <input id="gsi-mss" name="min-split-size" class="input-small" value="{{#_v.format_size_0}}{{min-split-size}}{{/_v.format_size_0}}" />
             </div>
-            </div>
-            <div class="clearfix"></div>
+            </div>-->
+            <!--<div class="clearfix"></div>-->
 
-            <div class="control-group">
+            <!--<div class="control-group">
             <label class="control-label" for="gsi-ua">User Agent</label>
             <div class="controls">
             <input id="gsi-ua" name="user-agent" class="input-xlarge" value="{{user-agent}}" />
             </div>
-            </div>
-            <div class="control-group">
+            </div>-->
+            <!--<div class="control-group">
             <label class="control-label" for="gsi-dir">Base Dir</label>
             <div class="controls">
             <input id="gsi-dir" name="dir" class="input-xlarge" value="{{dir}}" disabled />
             </div>
-            </div>
+            </div>-->
             </form>
         </script>
         <script src="js/jquery-1.7.2.min.js"></script>
