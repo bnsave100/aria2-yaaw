@@ -55,41 +55,41 @@
                 </div>
                 <div class="gpull">
                     <div class="pull-left pull-left-1" id="not-selected-grp">
-                        <a class="btn" id="add-task-btn" data-toggle="modal" href="#add-task-modal" rel="tooltip" title="添加任务">
+                        <a class="btn" id="add-task-btn" data-toggle="modal" href="#add-task-modal">
                             <i class="icon-plus"></i><br/>添加
                         </a>
-                        <a href="###" class="btn" rel="tooltip" title="开始">
+                        <a href="###" class="btn">
                             <i class="icon-play"></i><br/>开始
                         </a>
-                        <a href="###" class="btn" rel="tooltip" title="暂停">
+                        <a href="###" class="btn">
                             <i class="icon-pause"></i><br/>暂停
                         </a>
-                        <a href="###" class="btn" rel="tooltip" title="删除">
+                        <a href="###" class="btn">
                             <i class="icon-remove"></i><br/>删除
                         </a>
                     </div>
                     <div class="pull-left pull-left-1 hide" id="selected-grp">
-                        <a class="btn" id="add-task-btn" data-toggle="modal" href="#add-task-modal" rel="tooltip" title="添加任务">
+                        <a class="btn" id="add-task-btn" data-toggle="modal" href="#add-task-modal">
                             <i class="icon-plus"></i><br/>添加
                         </a>
                         <a href="###" onclick="YAAW.tasks.unpause();
-                    YAAW.tasks.unSelectAll();" class="btn" rel="tooltip" title="开始">
+                    YAAW.tasks.unSelectAll();" class="btn">
                             <i class="icon-play"></i><br/>开始
                         </a>
                         <a href="###" onclick="YAAW.tasks.pause();
-                    YAAW.tasks.unSelectAll();" class="btn" rel="tooltip" title="暂停">
+                    YAAW.tasks.unSelectAll();" class="btn">
                             <i class="icon-pause"></i><br/>暂停
                         </a>
                         <a href="###" onclick="YAAW.tasks.remove();
-                    YAAW.tasks.unSelectAll();" class="btn" rel="tooltip" title="删除">
+                    YAAW.tasks.unSelectAll();" class="btn">
                             <i class="icon-remove"></i><br/>删除
                         </a>
                     </div>
                     <div class="pull-left" id="other-grp">
-                            <a href="#" class="btn" id="refresh-btn" rel="tooltip" title="Refresh">
+                            <a href="#" class="btn" id="refresh-btn">
                                 <i class="icon-refresh"></i><br/>刷新
                             </a>
-                            <a class="btn" id="setting-btn" data-toggle="modal" href="#setting-modal" rel="tooltip" title="设置">
+                            <a class="btn" id="setting-btn" data-toggle="modal" href="#setting-modal">
                                 <i class="icon-wrench"></i><br/>设置
                             </a>
                     </div>
@@ -145,7 +145,7 @@
                 <form id="add-task-uri" onsubmit="YAAW.add_task.submit(this);
               return false;">
                     <div class="input-append">
-                        <input type="text" name="uri" id="uri-input" class="input-clear" placeholder="HTTP, FTP or Magnet" /><span><input type="file" id="torrent-up-input" /><a id="torrent-up-btn" class="btn" rel="tooltip" title="File API is Not Supported.">上传BT种子</a></span>
+                        <input type="text" name="uri" id="uri-input" class="input-clear" placeholder="HTTP, FTP or Magnet" /><span><input type="file" id="torrent-up-input" /><a id="torrent-up-btn" class="btn">上传BT种子</a></span>
                     </div>
                     <textarea id="uri-textarea" rows=5 class="input-clear hide" placeholder="HTTP, FTP or Magnet"></textarea>
                 </form>
@@ -221,7 +221,7 @@
             </div>
             <div class="right-area">
             <div class="progress-info">
-            <span class="task-status" rel="tooltip" title="{{status}} {{#_v.error_msg}}{{errorCode}}{{/_v.error_msg}}"><i class="{{#_v.status_icon}}{{status}}{{/_v.status_icon}}"></i></span>
+            <span class="task-status"></i></span>
             {{#downloadSpeed}}<span class="download-speed"> {{#_v.format_size}}{{downloadSpeed}}{{/_v.format_size}}/s </span>{{/downloadSpeed}}
             </div>
             </div>
@@ -249,7 +249,7 @@
             </div>
             <div class="right-area">
             <div class="task-info pull-left">
-            <span class="task-status" rel="tooltip" title="{{status}} {{#_v.error_msg}}{{errorCode}}{{/_v.error_msg}}"><i class="{{#_v.status_icon}}{{status}}{{/_v.status_icon}}"></i></span>
+            <span class="task-status"></i></span>
             <span>{{#_v.format_size}}{{totalLength}}{{/_v.format_size}}</span>
             {{#uploadLength}}<span>(up {{#_v.format_size}}{{uploadLength}}{{/_v.format_size}}){{/uploadLength}}
             </div>
