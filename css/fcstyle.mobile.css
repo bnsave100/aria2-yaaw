@@ -146,6 +146,22 @@ html, body, .container {
     width: 180px !important;
 }
 
+#setting-modal .control-label {
+    width: 96px !important;
+}
+
+#setting-modal .controls {
+    margin-left: 115px !important;
+}
+
+#add-task-modal .control-label {
+    width: 42px !important;
+}
+
+#add-task-modal .controls {
+    margin-left: 72px !important;
+}
+
 #uri-input {
     width:200px !important;
 }
