@@ -541,7 +541,7 @@ if (typeof ARIA2=="undefined"||!ARIA2) var ARIA2=(function(){
           });
 
           if (error.length == 0) {
-            main_alert("alert-info", "Removed", 1000);
+            main_alert("alert-info", "任务已删除", 1000);
             ARIA2.tell_stoped();
           } else {
             main_alert("alert-error", error.join("<br />"), 3000);
