@@ -82,6 +82,7 @@ html, body, .container {
     margin-left:10px;
     margin-bottom: 2px;
     color:#555;
+    width:100%;
 }
 
 .container .left-frame .aria2-info .ab span {
@@ -90,6 +91,7 @@ html, body, .container {
 
 .container .left-frame .aria2-info .a {
     margin-top:15px;
+    display:table;
 }
 
 .container .left-frame .aria2-info .title {
