@@ -220,7 +220,7 @@
             </div>
             <div class="right-area">
             <div class="progress-info">
-            <span class="task-status"></i></span>
+            <span class="task-status"><i class="{{#_v.status_icon}}{{status}}{{/_v.status_icon}}"></i></span>
             {{#downloadSpeed}}<span class="download-speed"> {{#_v.format_size}}{{downloadSpeed}}{{/_v.format_size}}/s </span>{{/downloadSpeed}}
             </div>
             </div>
@@ -248,7 +248,7 @@
             </div>
             <div class="right-area">
             <div class="task-info pull-left">
-            <span class="task-status"></i></span>
+            <span class="task-status"><i class="{{#_v.status_icon}}{{status}}{{/_v.status_icon}}"></i></span>
             <span>{{#_v.format_size}}{{totalLength}}{{/_v.format_size}}</span>
             {{#uploadLength}}<span>(up {{#_v.format_size}}{{uploadLength}}{{/_v.format_size}}){{/uploadLength}}
             </div>
