@@ -99,20 +99,6 @@
                                 <i class="icon-delete-alt"></i> 删除
                             </a>
                         </div>
-                        <!-- <div class="btn-group btn-inline" id="select-btn">
-                            <button id="select-all-btn" class="btn" rel="tooltip" title="Select All">
-                                <i class="select-box"></i>
-                            </button>
-                            <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-                                <span class="caret"></span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="###" onclick="YAAW.tasks.selectActive();">选中下载</a></li>
-                                <li><a href="###" onclick="YAAW.tasks.selectWaiting();">选中等待</a></li>
-                                <li><a href="###" onclick="YAAW.tasks.selectPaused();">选中暂停</a></li>
-                                <li><a href="###" onclick="YAAW.tasks.selectStoped();">选中停止</a></li>
-                            </ul>
-                        </div> -->
                     </div>
                     <div class="pull-left hide" id="selected-grp">
                         <div class="btn-group btn-inline">
@@ -129,18 +115,9 @@
                                 <i class="icon-delete"></i> 删除
                             </a>
                         </div>
-                        <!--<button class="btn pull-left" id="info-btn" rel="tooltip" title="Task Info">-->
-                        <!--<i class="icon-info-sign"></i> Info-->
-                        <!--</button>-->
                     </div>
                     <div class="pull-left" id="not-selected-grp">
                         <div class="btn-group btn-inline" style="border-right:none;">
-                            <!--<a href="###" onclick="ARIA2.unpause_all();" class="btn" id="unpause-all" rel="tooltip" title="开始所有">
-                                <i class="icon-forward"></i>
-                            </a>
-                            <a href="###" onclick="ARIA2.pause_all();" class="btn" id="pause-all" rel="tooltip" title="暂停所有">
-                                <i class="icon-stop"></i>
-                            </a>-->
                             <a href="###" onclick="ARIA2.purge_download_result();" class="btn" id="pure-all" rel="tooltip" title="清除已完成">
                                 <i class="icon-trash"></i> 清除完成
                             </a>
@@ -346,22 +323,6 @@
             </li>
             {{/tasks}}
         </script>
-        <!--<script id="info-box-tpl" type="text/mustache-template">
-            <div class="info-box" data-gid="{{gid}}">
-            <div class="tabbable tabs-left">
-            <ul class="nav nav-tabs">
-            <li class="active"><a href="#ib-status" data-toggle="tab">状态</a></li>
-            <li><a href="#ib-files" data-toggle="tab">文件</a></li>
-            <li><a id="ib-options-a" href="#ib-options" data-toggle="tab">设置</a></li>
-            </ul>
-            <div class="tab-content">
-            <div class="tab-pane active" id="ib-status"> </div>
-            <div class="tab-pane" id="ib-files"> </div>
-            <div class="tab-pane" id="ib-options"> </div>
-            </div>
-            </div>
-            </div>
-        </script>-->
         <script id="ib-status-tpl" type="text/mustache-template">
             <ul>
             <li><strong>大小: </strong>{{#_v.format_size}}{{totalLength}}{{/_v.format_size}} ({{numPieces}} @ {{#_v.format_size}}{{pieceLength}}{{/_v.format_size}})</li>
@@ -570,4 +531,3 @@ ga('send', 'pageview');
 <![endif]-->
     </body>
 </html>
-<!-- vim: set et sw=2 ts=2 sts=2 ff=unix fenc=utf8: -->
