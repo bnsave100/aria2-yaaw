@@ -140,6 +140,9 @@ html, body, .container {
     left:0 !important;
     width:100% !important;
     margin:0 !important;
+    box-shadow:none !important;
+    border:none !important;
+    border-radius:0 !important;
 }
 
 .input-small, .input-xlarge {
@@ -147,11 +150,15 @@ html, body, .container {
 }
 
 #setting-modal .control-label {
-    width: 96px !important;
+    width: 80px !important;
+}
+
+#setting-modal select {
+    width: 190px !important;
 }
 
 #setting-modal .controls {
-    margin-left: 115px !important;
+    margin-left: 102px !important;
 }
 
 #add-task-modal .control-label {
@@ -162,8 +169,17 @@ html, body, .container {
     margin-left: 72px !important;
 }
 
+#setting-modal .half,
+#add-task-modal .half {
+    margin-left:0 !important;
+}
+
 #uri-input {
     width:200px !important;
+}
+
+#main-alert {
+    bottom: 42px;
 }
 
 #main-control #not-selected-grp .icon-play {background:url(../img/icon-start-alt.png)}

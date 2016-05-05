@@ -105,7 +105,7 @@ html, body, .container {
 .container .right-frame #main-control {
     height:51px;
     min-width:400px;
-    line-height:51px;
+    /*line-height:51px;*/
     background: #ffffff;
     margin:0;
     border-bottom:1px solid #c5ddfb;

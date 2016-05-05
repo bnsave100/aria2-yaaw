@@ -178,7 +178,7 @@
               return false;">
                     <fieldset>
                         <div class="control-group">
-                            <label class="control-label" for="rpc-path">JSON-RPC 链接</label>
+                            <label class="control-label" for="rpc-path">JSON-RPC</label>
                             <div class="controls">
                                 <div class="input-append btn-group rpc-path-wrap">
                                     <input type="text" class="input-xlarge pull-left" id="rpc-path"><!--<a class="add-on btn dropdown-toggle" href="#" disabled><b class="caret"></b></a>-->
@@ -188,21 +188,13 @@
                         <div class="control-group">
                             <label class="control-label">自动刷新</label>
                             <div class="controls">
-                                <label class="radio inline" style="width:40px">
-                                    <input type="radio" name="refresh_interval" value="5000"> 5秒
-                                </label>
-                                <label class="radio inline" style="width:40px">
-                                    <input type="radio" name="refresh_interval" value="10000" checked> 10秒
-                                </label>
-                                <label class="radio inline" style="width:40px">
-                                    <input type="radio" name="refresh_interval" value="30000"> 30秒
-                                </label>
-                                <label class="radio inline" style="width:46px">
-                                    <input type="radio" name="refresh_interval" value="300000"> 5分钟
-                                </label>
-                                <label class="radio inline" style="width:40px">
-                                    <input type="radio" name="refresh_interval" value="0"> 关闭
-                                </label>
+                                <select>
+                                    <option name="refresh_interval" value="5000">每隔 5 秒钟</option>
+                                    <option name="refresh_interval" value="10000" selected>每隔 10 秒钟</option>
+                                    <option name="refresh_interval" value="30000">每隔 30 秒钟</option>
+                                    <option name="refresh_interval" value="300000">每隔 5 分钟</option>
+                                    <option name="refresh_interval" value="0">关闭自动刷新</option>
+                                </select>
                             </div>
                         </div>
                     </fieldset>
