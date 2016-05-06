@@ -492,12 +492,17 @@
         <script>
             function reSizeRF() {
                 var gWidth = document.documentElement.clientWidth;
+                var gHieght = document.documentElement.clientHeight;
                 var rfObj = document.getElementsByClassName('right-frame')[0];
+                var ataskObj = document.getElementById('active-tasks');
+                var otaskObj = document.getElementById('other-tasks');
                 if(gWidth < 900) {
                     rfObj.style.width = "679px";
                 } else {
                     rfObj.style.width = (gWidth - 221) + "px";
                 }
+                ataskObj.style.height = (gHieght - 135) + "px";
+                otaskObj.style.height = (gHieght - 135) + "px";
             }
             window.onload = reSizeRF;
             window.onresize = reSizeRF;
