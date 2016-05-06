@@ -225,9 +225,13 @@ html, body, .container {
     color:#ABABAB;
     font-size:12px;
     border-bottom:1px solid #ebf4fe;
+    display: table;
+    width: 100%;
+    position: relative;
 }
 
 .tasks-table {margin:0;}
+.task .progress-info {color: #949494; margin-top: 6px;}
 #active-tasks {margin:0;}
 #other-tasks {margin:0;}
 #active-tasks .section-header {display:none;}
@@ -239,21 +243,23 @@ html, body, .container {
 }
 
 #active-tasks .item-bar .status {margin-left:30px;}
-#active-tasks .item-bar .size {margin-left:58px;}
-#active-tasks .item-bar .time {margin-left:53px;}
+#active-tasks .item-bar .size {margin-left:62px;}
+#active-tasks .item-bar .time {margin-left:64px;}
 #active-tasks .item-bar .prog {
-    position: absolute;
+    position: relative;
     right: 0;
-    margin-right: 178px;
+    margin-right: 168px;
+    float: right;
 }
 
 #other-tasks .item-bar .filename {margin-left:52px;}
 #other-tasks .item-bar .status {margin-left:34px;}
 #other-tasks .item-bar .size {margin-left:1px;}
 #other-tasks .item-bar .prog {
-    position: absolute;
+    position: relative;
     right: 0;
     margin-right: 244px;
+    float: right;
 }
 
 i.icon-new {background: url(../img/icon-new.png);} /*0061c5*/
@@ -272,3 +278,5 @@ i.icon-remove-alt {background: url(../img/icon-delete.png); background-size: 14p
 i.icon-pause-alt2 {background: url(../img/icon-pause.png); background-size: 14px;}
 i.icon-time-alt {background: url(../img/icon-clock-alt.png); background-size: 14px;}
 i.icon-ok-alt {background: url(../img/icon-ok-alt.png); background-size: 14px;}
+i.icon-download {background: url(../img/icon-download.png); background-size: 14px;}
+i.icon-signal {background: url(../img/icon-conn.png); background-size: 15px;}
