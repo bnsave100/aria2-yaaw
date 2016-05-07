@@ -3,7 +3,7 @@ iAria2 is another style WebUI for aria2c downlaoder. Its based on the project of
 
 iAria2's PC side style or user-interface design is reference from Xware project of Xunlei Networks, and I tried to redesigned mobile side user-interface. I think it's more in-line with part of user's usage habits. In the design process, I cancelled some function which users don't or rarely use.
 
-In the final, I have tried to Chineseization (Chinese localization) this copy from YAAW project. And applied the Chineseizated copy of YAAW project in iAria2 project. If you want a non-Chineseizated version of iAria2, Please replace `aria2.js` and `yaaw.js` from origin of YAAW project. (But there are still some words in Chinese)
+In the final, I have tried to Chinesization (Chinese localization) this copy from YAAW project. And applied the Chineseizated copy of YAAW project in iAria2 project. If you want a non-Chineseizated version of iAria2, Please replace `aria2.js` and `yaaw.js` from origin of YAAW project. (But there are still some words in Chinese)
 
 ## Screenshots
 <img src="https://i.imgsafe.org/1545f70.jpg" height="320px"/>
