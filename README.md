@@ -16,7 +16,7 @@ In the final, I have tried to Chinesization (Chinese localization) this copy fro
 
 ## Copyright of YAAW
 ```
-Copyright (C) 2012 Binux <17175297.hk@gmail.com>
+Copyright (C) 2015 Binux <roy@binux.me>
 
 YAAW is free software: you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as
