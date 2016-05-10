@@ -34,4 +34,4 @@ from http://www.gnu.org/licenses/lgpl.txt
 
 ## License
 <b>YAAW project:</b> GNU Lesser General Public License<br/>
-<b>ware User-interface:</b> Xunlei License
+<b>Xware User-interface:</b> Xunlei License
